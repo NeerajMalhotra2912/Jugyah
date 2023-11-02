@@ -11,7 +11,7 @@ public class loginTest extends BaseTest {
         BookVisitForNewUser bookVisitForNewUser = new BookVisitForNewUser();
         bookVisitForNewUser.setup();
         bookVisitForNewUser.doSignUp();
-        bookVisitForNewUser.findNewHomeWithoutLogin();
+        bookVisitForNewUser.findNewHome();
         bookVisitForNewUser.selectProperty();
         bookVisitForNewUser.scheduleVisitViaDates();
         bookVisitForNewUser.selectTimeSlot();
@@ -22,7 +22,7 @@ public class loginTest extends BaseTest {
     public void testWithoutLogInUser() throws InterruptedException {
         BookVisitWithOutLoggingUser baseClass = new BookVisitWithOutLoggingUser();
         baseClass.setup();
-        baseClass.findNewHomeWithoutLogin();
+        baseClass.findNewHome();
         baseClass.selectProperty();
         baseClass.scheduleVisitViaDates();
         baseClass.selectTimeSlot();
@@ -34,7 +34,7 @@ public class loginTest extends BaseTest {
         BookVisitWithLoggingUser bookVisitWithLoggingUser = new BookVisitWithLoggingUser();
         bookVisitWithLoggingUser.setup();
         bookVisitWithLoggingUser.doLogin();
-        bookVisitWithLoggingUser.findNewHomeWithoutLogin();
+        bookVisitWithLoggingUser.findNewHome();
         bookVisitWithLoggingUser.selectProperty();
         bookVisitWithLoggingUser.scheduleVisitViaDates();
         bookVisitWithLoggingUser.selectTimeSlot();
